@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Hospital Management System - Java AWT Applet</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #38bdf8;
+            margin: 0 0 10px 0;
+        }
+        .badge {
+            background: #0284c7;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .applet-container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            border: 2px solid #334155;
+            overflow: hidden;
+        }
+        .info-box {
+            max-width: 1000px;
+            margin-top: 20px;
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #10b981;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .code-snippet {
+            background: #090d16;
+            color: #38bdf8;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin-top: 8px;
+        }
+        .btn-link {
+            display: inline-block;
+            background: #0ea5e9;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.2s;
+        }
+        .btn-link:hover {
+            background: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Smart Hospital Management System</h1>
+        <span class="badge">Java AWT Applet & MySQL JDBC Platform</span>
+    </div>
+
+    <div class="applet-container">
+        <!-- Standard HTML Applet Tag for AppletViewer or Browser Plugins -->
+        <applet code="hospital.applet.HospitalApplet.class" 
+                codebase="out" 
+                width="1000" 
+                height="700">
+            <param name="theme" value="modern">
+            <p style="color: #333; padding: 40px; text-align: center;">
+                <strong>Java Applet Component</strong><br><br>
+                To run in AppletViewer:<br>
+                <code>appletviewer applet.html</code><br><br>
+                Or run standalone with:<br>
+                <code>java -cp out hospital.applet.HospitalApplet</code>
+            </p>
+        </applet>
+    </div>
+
+    <div class="info-box">
+        <h3 style="margin-top:0; color:#10b981;">🚀 How to Run the AWT Applet:</h3>
+        <p>1. <strong>Direct One-Click Script</strong>: Double-click <code>run-applet.bat</code> in the project root.</p>
+        <p>2. <strong>AppletViewer Command</strong>:</p>
+        <div class="code-snippet">appletviewer applet.html</div>
+        <p>3. <strong>Standalone Java AWT Window Command</strong>:</p>
+        <div class="code-snippet">java -cp out hospital.applet.HospitalApplet</div>
+        <p>4. <strong>Modern Web GUI Platform (Browser)</strong>:</p>
+        <div class="code-snippet">http://localhost:8080/</div>
+        <a href="http://localhost:8080" class="btn-link">Open Full Web Dashboard ➔</a>
+    </div>
+</body>
+</html>
